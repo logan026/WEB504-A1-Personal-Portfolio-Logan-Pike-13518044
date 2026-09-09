@@ -1,0 +1,12 @@
+/*Strip default padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', Tahoma, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #ffff;
+    color: #222;
+}
