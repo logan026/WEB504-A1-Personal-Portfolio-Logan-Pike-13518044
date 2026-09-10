@@ -6,7 +6,7 @@
     margin-top: 3rem;
 }
 .social-links a {
-    color: #f39c;
+    color: rgba(255, 51, 153, 0.8);
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;

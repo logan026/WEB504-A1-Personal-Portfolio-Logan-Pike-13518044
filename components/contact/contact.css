@@ -36,5 +36,5 @@ input, textarea {
     width: 100%;
 }
 .submit-btn:hover {
-    background-color: #f39c;
+    background-color: rgba(255, 51, 153, 0.8);
 }

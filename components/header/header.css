@@ -18,5 +18,8 @@ nav a {
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 nav a:hover {
-    color: #f39c;
+    color: rgba(255, 51, 153, 0.8);
+}
+nav a.active {
+    color: rgba(255, 51, 153, 0.8);
 }
