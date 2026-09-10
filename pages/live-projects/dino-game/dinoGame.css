@@ -1,0 +1,76 @@
+#scoreboard {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+
+#game {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 20px auto 0 auto;
+    background-image: url('https://media.istockphoto.com/id/1182467056/vector/cute-meadow-area-with-clouds-stars-and-mountains.jpg?s=612x612&w=0&k=20&c=SwM7C0pbLBDmJRKXJLwGfFVPB2Tl5boff8kYmQOs3mg=');
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: bigScroll 4s linear infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+#dinosaur {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 225px;
+    left: 50px;
+    background-image: url('https://static.thenounproject.com/png/3907595-200.png');
+    background-size: cover;
+}
+
+.rock {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/049/379/217/small/a-retro-styled-pixel-art-illustration-of-a-sharp-gray-rock-with-many-edges-and-bumps-png.png');
+    background-size: cover;
+    animation: rockLeft 1.33s linear infinite;
+}
+
+@keyframes rockLeft {
+    from {
+        left: 600px;
+    }
+    to {
+        left: -50px;
+    }
+}
+
+@keyframes bigScroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -600px 0;
+    }
+}
+
+.jump-animation {
+    animation: jump 0.5s ease-out;
+}
+
+@keyframes jump {
+    0% {
+        top: 225px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 225px;
+    }
+}

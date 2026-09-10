@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Canteen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="canteen.js" defer></script>
+</head>
+<body>
+    <div class ="canteen">
+        <p id="welcome-message">
+        <input type="text" placeholder="Set Username" id="username">
+        <button onclick="login()">Login</button>
+        Please set username to either 'Student' or 'Staff'.
+        </p>
+        <p id="userNotFound"></p>
+        <div id ="order" hidden>
+        <label for="large-meal">Large Meal Quantity:</label>
+        <input type="number" id="large-meal" min="0" value="0"> <br>
+        <label for="small-meal">Small Meal Quantity:</label>
+        <input type="number" id="small-meal" min="0" value="0"> <br>
+        <button onclick="placeOrder()">Place Order</button>
+        </div>
+        <div id="order-summary" hidden>
+        <p id="order-before-discount"></p>
+        <p id="order-bulk-discount"></p>
+        <p id="order-staff-discount"></p>
+        <p id="order-after-discount"></p>
+        </div>
+        <div id="new-order" hidden>
+        <button onclick="newOrder()">New Order</button>
+        </div>
+    </div>
+
+</body>
+</html>
