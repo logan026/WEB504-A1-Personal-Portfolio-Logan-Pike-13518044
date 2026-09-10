@@ -8,7 +8,8 @@
 }
 
 #game {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 300px;
     border: 2px solid black;
     margin: 20px auto 0 auto;
