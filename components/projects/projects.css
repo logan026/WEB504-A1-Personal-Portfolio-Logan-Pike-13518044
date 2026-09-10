@@ -1,6 +1,6 @@
 .project-card {
     background: #ffffff;
-    border: 1px solid #111;
+    border: 1px solid #1b8c77;
     border-radius: 8px;
     padding: 1.5rem;
     margin: 2rem auto;
@@ -11,14 +11,14 @@
 /*Add lift effect when hovering over project */
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(27,140,119,0.2);
 }
 .project-card h3 {
-    color: #2c3e55;
+    color: #1b8c77;
     margin-bottom: 1rem;
 }
 h1 {
-    color: #2c3e55;
+    color: #1b8c77;
     margin-bottom: 1rem;
     text-align: center;
 }

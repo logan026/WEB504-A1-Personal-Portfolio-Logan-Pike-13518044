@@ -13,6 +13,7 @@
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 8px;
+    border-top: 4px solid #1b8c77;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 /* media query - adjust layout for larger screens */
@@ -22,7 +23,7 @@
     }
 }
 h1, h3 {
-    color: #2c3e55;
+    color: #1b8c77;
     margin-bottom: 1rem;
     text-align: center;
 }
