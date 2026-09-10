@@ -3,13 +3,18 @@ header {
     background-color: #2c3e55;
     padding: 1rem 0;
 }
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
     justify-content: center;
     margin: 0;
     padding: 0;
+}
+.nav-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 nav a {
     color: #ffffff;
@@ -22,4 +27,36 @@ nav a:hover {
 }
 nav a.active {
     color: rgba(255, 51, 153, 0.8);
+}
+.mobile-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .nav-container {
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+    .mobile-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #2c3e55;
+        text-align: center;
+        padding: 1rem 0;
+        gap: 15px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
 }
