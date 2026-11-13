@@ -6,4 +6,36 @@ if (contactForm) {
         alert('Thank you for reaching out! Your message has been sent / simulated successfully!');
         contactForm.reset(); //Start fresh form
     });
-}
+};
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js';
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged,
+    sendEmailVerification,
+} from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js';
+import {
+    getFirestore,
+    collection,
+    addDoc,
+    onSnapshot,
+    doc,
+    updateDoc,
+    deleteDoc,
+    query,
+    orderBy,
+    serverTimestamp,
+} from 'https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js';
+const firebaseConfig = {
+  apiKey: "AIzaSyDSZzpF8nzGp4wDk3t_prwalIIr4Y9krhA",
+  authDomain: "logan-pike-portfolio.firebaseapp.com",
+  projectId: "logan-pike-portfolio",
+  storageBucket: "logan-pike-portfolio.firebasestorage.app",
+  messagingSenderId: "407491189448",
+  appId: "1:407491189448:web:026ebacd11d96b69e8a3fd"
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
