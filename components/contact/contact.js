@@ -65,3 +65,22 @@ const commentLoginPrompt = document.getElementById('commentLoginPrompt');
 const commentslist = document.getElementById('commentsList');
 const showActiveBtn = document.getElementById('showActiveBtn');
 const showArchivedBtn = document.getElementById('showArchivedBtn');
+//Generate CAPTCHA challenge to prevent automated bot attacks
+const generateCaptcha = () => {
+    const numA = Math.floor(Math.random() * 9) + 1;
+    const numB = Math.floor(Math.random() * 9) + 1;
+    expectedCaptchaAnswer = numA + numB;
+    captchaPrompt.textContent = 'Security Check (CAPTCHA): What is ${numA} + ${numB}?';
+    captchaInput.value = '';
+};
+//Validate CAPTCHA
+const validateCaptcha = () => {
+    const userAnswer = Number.parseInt(captchaInput.value, 10);
+    if (Number.isNaN(userAnswer) || userAnswer !== expectedCaptchaAnswer) {
+        authStatus.textContent = 'Security Error: Incorrect CAPTCHA answer. Please try again.';
+        authStatus.style.color = '#dc2626';
+        generateCaptcha();
+        return false;
+    }
+    return true;
+};
