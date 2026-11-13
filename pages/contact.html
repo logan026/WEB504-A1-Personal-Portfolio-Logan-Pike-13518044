@@ -54,7 +54,13 @@
                 <form id="authForm" class="contact-form">
                     <div class="form-group">
                         <label for="authEmail">Account Email:</label>
+                        <input type="email" id="authEmail" required placeholder="reviewer@example.com">
                     </div>
+                    <div class="form-group">
+                        <label for="authPassword">Password (minimum 6 characters):</label>
+                        <input type="password" id="authPassword" minlength="6" required placeholder="------">
+                    </div>
+                    
                 </form>
             </div>
         </section>
