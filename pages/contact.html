@@ -29,7 +29,7 @@
             <h2>Contact for Professional Inquiries</h2>
             <p>If you need someone to build and design application logic or clear technical communication, I am ready to help.</p>
             <!--Contact front end form. 'required' attribute ensures HTML validation-->
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm">
                 <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
@@ -48,13 +48,13 @@
             </form>
         </section>
         <section class="card-section auth-section">
-            <h2>Reviewer Authentication Portal</h2>
+            <h2>Account Authentication Portal</h2>
             <p>Register or log in to post, edit, archive, or delete comments.</p>
             <div id="authLoggedOutView">
                 <form id="authForm" class="contact-form">
                     <div class="form-group">
                         <label for="authEmail">Account Email:</label>
-                        <input type="email" id="authEmail" required placeholder="reviewer@example.com">
+                        <input type="email" id="authEmail" required placeholder="john@example.com">
                     </div>
                     <div class="form-group">
                         <label for="authPassword">Password (minimum 6 characters):</label>
@@ -65,7 +65,7 @@
                         <input type="number" id="captchaInput" required placeholder="Enter answer">
                     </div>
                     <div class="button-row">
-                        <button type="button" id="LoginBtn" class="submit-btn">Log In</button>
+                        <button type="button" id="loginBtn" class="submit-btn">Log In</button>
                         <button type="button" id="registerBtn" class="secondary-btn">Register Account</button>
                     </div>    
                 </form>
@@ -86,7 +86,7 @@
             <div class="comments-header">
                 <h2>Comment Section</h2>
                 <div class="filter-controls">
-                    <button type="button" id="showActiveBtn" class="filter-btn active-filter">Active Comments</button>
+                    <button type="button" id="showActivedBtn" class="filter-btn active-filter">Active Comments</button>
                     <button type="button" id="showArchiveBtn" class="filter-btn">Archived Comments</button>
                 </div>
             </div>
@@ -113,7 +113,7 @@
         </div>
     </footer>
     <!--Link to JavaScript form submission-->
-    <script src="../components/contact/contact.js"></script>
+    <script type="module" src="../components/contact/contact.js"></script>
     <script src="../components/header/header.js"></script>
 </body>
 </html>
