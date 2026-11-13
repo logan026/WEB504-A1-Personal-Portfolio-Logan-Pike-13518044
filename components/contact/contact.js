@@ -212,7 +212,7 @@ const handleToggleArchive = async (commentId, currentArchiveState) => {
         const commentRef = doc(db, 'comments', commentId);
         await updateDoc(commentRef, {
             isArchived: !currentArchiveState,
-            updateAt: serverTimestamp(),
+            updatedAt: serverTimestamp(),
         });
     } catch (error) {
         authStatus.textContent = `Archive Error: ${error.message}`;
