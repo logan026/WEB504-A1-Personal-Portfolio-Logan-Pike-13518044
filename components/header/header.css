@@ -29,7 +29,7 @@ nav a.active {
     color: #80FFF1;
 }
 .mobile-toggle {
-    display: none;
+    display: none; /* Turn off mobile nav by default */
     font-size: 2rem;
     background: none;
     color: #ffffff;
