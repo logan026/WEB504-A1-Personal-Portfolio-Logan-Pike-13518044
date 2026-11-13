@@ -90,8 +90,18 @@
                     <button type="button" id="showArchiveBtn" class="filter-btn">Archived Comments</button>
                 </div>
             </div>
-
-            
+            <!--Creation Form-->
+            <form id="commentForm" class="contact-form hidden">
+                <div class="form-group">
+                    <label for="commentInput">Post a Comment</label>
+                    <textarea id="commentInput" rows="3" maxlength="500" required placeholder="Share your feedback..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Post Comment</button>
+            </form>
+            <p id="commentLoginPrompt" class="notice-text">Please log in above to post, edit, or archive comments.</p>
+            <div id="commentsList" class="comments-list" aria-live="polite">
+                <p class="loading-text">Connecting to Firebase...</p>
+            </div>
         </section>
     </main>
     <footer class="site-footer">
